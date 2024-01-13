@@ -2,7 +2,7 @@ export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <div className="item">
       <img
-        className="avatar"
+        className="friends-avatar"
         src={avatar}
         alt={name}
         width="48"

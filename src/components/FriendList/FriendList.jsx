@@ -4,23 +4,26 @@ import "./FriendList.css";
 export const FriendList = ({ friends }) => {
   return (
     <ul className="friend-list">
-      {friends.map((friend) => {
+      {friends.map(({ isOnline, id, avatar, name }) => {
         const statusClasses = ["status"];
-        if (friend.isOnline === true) {
+        if (isOnline === true) {
           statusClasses.push("online");
         } else {
           statusClasses.push("offline");
         }
         return (
-          <li key={friend.id}>
+          <li
+            className="friend-list-discription"
+            key={id}
+          >
             <img
-              src={friend.avatar}
+              src={avatar}
               alt="friend-avatar"
-              width="100"
+              width="75"
             />
-            <p className="friend-name">{friend.name}</p>
+            <p className="friend-name">{name}</p>
             <p className={statusClasses.join(" ")}>
-              {friend.isOnline ? "Online" : "Offline"}
+              {isOnline ? "Online" : "Offline"}
             </p>
           </li>
         );

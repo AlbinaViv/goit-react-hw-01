@@ -1,0 +1,14 @@
+tbody tr:nth-child(odd) {
+  background-color: whitesmoke;
+}
+
+tbody tr:nth-child(even) {
+  background-color: darkgrey;
+}
+
+table {
+  background-color: gray;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}

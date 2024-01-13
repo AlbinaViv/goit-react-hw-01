@@ -1,7 +1,30 @@
+.friend-list {
+  margin-top: 20px;
+}
+.friend-name {
+  font-size: 30px;
+  margin: 0;
+}
+
+.status {
+  margin: 0;
+}
+
 .friend-list .online {
   color: green;
 }
 
-.friend-list .status.offline {
+.friend-list .offline {
   color: red;
+}
+
+.friend-list-discription {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-style: solid;
+  border-radius: 10px;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
 }
