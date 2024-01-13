@@ -1,0 +1,7 @@
+.friend-list .online {
+  color: green;
+}
+
+.friend-list .status.offline {
+  color: red;
+}

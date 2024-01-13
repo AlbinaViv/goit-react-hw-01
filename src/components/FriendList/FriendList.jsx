@@ -1,9 +1,16 @@
-import { FriendListItem } from "./FriendListItem";
+import { FriendListItem } from "../FriendListItem/FriendListItem";
+import "./FriendList.css";
 
 export const FriendList = ({ friends }) => {
   return (
     <ul className="friend-list">
       {friends.map((friend) => {
+        const statusClasses = ["status"];
+        if (friend.isOnline === true) {
+          statusClasses.push("online");
+        } else {
+          statusClasses.push("offline");
+        }
         return (
           <li key={friend.id}>
             <img
@@ -11,8 +18,8 @@ export const FriendList = ({ friends }) => {
               alt="friend-avatar"
               width="100"
             />
-            <p class="friend-name">{friend.name}</p>
-            <p class="friend-status">
+            <p className="friend-name">{friend.name}</p>
+            <p className={statusClasses.join(" ")}>
               {friend.isOnline ? "Online" : "Offline"}
             </p>
           </li>

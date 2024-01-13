@@ -1,13 +1,11 @@
-import { Profile } from "./Profile";
-import userData from "../userData.json";
-import { FriendList } from "./FriendList";
-import friends from "../friends.json";
+import { Profile } from "../Profile/Profile";
+import userData from "/src/userData.json";
+import { FriendList } from "../FriendList/FriendList";
+import friends from "/src/friends.json";
 // import { TransactionHistory } from "./TransactionHistory";
-// import transactions from "../transactions.json";
+// import transactions from "/src/transactions.json";
 
-// import "../css/App.css";
-
-function App() {
+export const App = () => {
   return (
     <div>
       <Profile
@@ -21,6 +19,4 @@ function App() {
       {/* <TransactionHistory items={transactions} /> */}
     </div>
   );
-}
-
-export default App;
+};
