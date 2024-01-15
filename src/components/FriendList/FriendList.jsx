@@ -12,7 +12,7 @@ export const FriendList = ({ friends }) => {
             key={id}
           >
             <FriendListItem
-              image={avatar}
+              avatar={avatar}
               name={name}
               isOnline={isOnline}
             />
