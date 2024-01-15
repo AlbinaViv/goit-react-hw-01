@@ -6,7 +6,7 @@ tbody tr:nth-child(even) {
   background-color: darkgrey;
 }
 
-table {
+.transactionHistory {
   background-color: gray;
   width: 100%;
   text-align: center;

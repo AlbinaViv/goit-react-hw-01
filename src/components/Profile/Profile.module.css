@@ -12,7 +12,7 @@
   margin-top: 20px;
 }
 
-.hiro-avatar {
+.hiroAvatar {
   display: inline-block;
   border-radius: 50%;
   overflow: hidden;
@@ -42,7 +42,13 @@
   align-items: center;
 }
 
-.stats-colomn {
+.statslist {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.statsColomn {
   display: flex;
   flex-wrap: wrap;
   border-style: solid;
